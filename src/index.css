@@ -21,9 +21,32 @@ body{
   height: 100px;
 }
 
+.terms-navbar{
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+  margin-top: 30px;
+  margin-bottom: 80px;
+  height: 100px;
+}
+
+.terms-navbar img{
+  margin-bottom: -30px;
+}
+.terms-body{
+ background-color: #4445C1;
+ padding: 20px;
+ margin: 20px;
+ border-radius: 20px;
+}
+
+.terms-body h2{
+  margin-bottom: 20px;
+}
+
 .hero-section{
   display: flex;
-  height: 100vh;
+  height: 90vh;
 }
 
 .hero-left, .hero-right{
@@ -47,7 +70,9 @@ body{
 }
 
 .hero-right img{
-  width: 80%;
+  width: 70%;
+  height: 70%;
+  margin-top: -100px;
 }
 
 
@@ -123,6 +148,18 @@ body{
   font-size: 20px;
 }
 
+a{
+  text-decoration: none;
+
+}
+
+a p {
+  transition: 0.1s ease-in;
+}
+a p:hover{
+  transform: scale(1.05);
+}
+
 .third-section h1{
   text-align: center;
   color: #000000;
@@ -145,6 +182,7 @@ body{
   text-align: center;
 }
 
+
 .card-content h3{
   margin-bottom: 20px;
 }
@@ -165,15 +203,28 @@ body{
   display: flex;
   justify-content: space-between;
 }
+
+.card-content img{
+  height: 60px;
+}
  .calculator p {
   margin: 10px 0px;
 }
+
+.calculator-bottom p{
+  margin-bottom: 5px;
+}
 .calculator-bottom{
-  background-color: #00abf5;
+  background-color: #4445C1;
   padding: 10px;
   color: #ffffff;
-  border-radius: 0px 0px 10px 10px;
+  border-radius: 0px 0px 10px 10px ;
   margin-top: 20px;
+}
+
+.checkboxes{
+  display: flex;
+  justify-content: space-between;
 }
 
 .calculator-bottom button{
@@ -211,6 +262,55 @@ body{
 .brands img{
   height: 10%;
   width: 10%;
+}
+
+.carousel{
+  margin-bottom: 20px;
+}
+
+.partners-section h2{
+  font-size: 50px;
+
+}
+.partners-section p{
+  font-size: 20px;
+}
+
+.partners-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  color: black;
+  text-align: center;
+  padding: 20px;
+  background-color: #4445C1;
+  border-radius: 0px 50px;
+  color: white;
+}
+
+.partners-section img{
+  height: 100px;
+  padding: 10px;
+}
+
+.investor-cards{
+  display: flex;
+  text-align: center
+}
+
+.icard{
+  padding: 20px;
+  background-color: #4445C1;
+  margin: 20px;
+  border-radius: 10px;
+  box-shadow: 1px 1px 10px #8f8fd4;
+  transition: 0.1s ease-in;
+}
+
+.icard:hover{
+  transform: scale(1.02);
+  cursor: pointer;
 }
 
 .fifth-section{
@@ -295,6 +395,23 @@ body{
   margin-bottom: 50px;
 }
 
+
+.owl-carousel .owl-item img {
+  max-height: 200px !important;
+  max-width: 200px!important;
+}
+
+.item{
+  display: flex;
+ justify-content: center;
+ padding: 10px;
+}
+
+.owl-stage{
+  align-items: center;
+  display: flex;
+}
+
 .footer h2{
   margin-bottom: 20px;
 }
@@ -311,28 +428,132 @@ body{
 @media screen and (max-width: 800px) {
   .hero-section {
       flex-direction: column;
-      height: 75vh;
+      height: fit-content;
+      text-align: center;
   }
   .hero-left {
     margin: 0;
     padding: 0;
+    order: 2;
+    display: flex;
+    align-items: center;
+  }
+
+  .hero-right img{
+    width: 100%;
+    height: 100%;
+    margin-top: 0px;
   }
 
   .navbar{
     margin-bottom: 40px;
+    height: 80px;
   }
+
+  body{
+    padding: 0 40px;
+    min-width: 400px;
+  }
+
 
   .hero-left p , .hero-left h1{
     margin-bottom: 20px;
   }
 
   .hero-right {
-    display: none;
+    order: 1;
   }
+
 
   
 .sayf-video{
   background-color: wheat;
 }
+
+.second-section{
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: fit-content;
+  margin-top: 100px;
+}
+
+.second-section-right-inside img{
+  width: 120px;
+}
+
+.second-section-left img{
+  width: 50vw;
+}
+
+
+
+.third-section h1{
+  margin-bottom: 10px;
+}
+
+.third-section .cards{
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: fit-content;
+}
+
+.calculator{
+  margin-top: 50px;
+  min-width: 80vw;
+}
+
+.fourth-section{
+  height: fit-content;
+}
+
+.partners-section{
+  padding: 15px;
+}
+
+.partners-section h2{
+  margin-bottom: 20px;
+}
+
+.partners-section p{
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+.investor-cards{
+  flex-direction: column;
+}
+
+
+
+.fifth-section{
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: fit-content;
+  padding: 20px;
+  text-align: center;
+}
+
+.fifth-section .left h1{
+  font-size: 38px;
+  margin-bottom: 20px;
+}
+
+.fifth-section .left p{
+  font-size: 18px;
+}
+
+.footer{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.footer .f1, .f2, .f3{
+  margin-bottom: 40px;
+}
+
+
   
 }

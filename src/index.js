@@ -4,9 +4,26 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+import {
+  HashRouter as Router,
+  Route,
+  Switch,
+  Link
+} from "react-router-dom";
+import Terms from './Terms';
+
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+        <Router>
+        <Switch>
+                <Route exact path="/">
+                  <App />
+                </Route>
+                <Route exact path="/terms">
+                  <Terms />
+                </Route>
+       </Switch>
+        </Router>
   </React.StrictMode>,
   document.getElementById('root')
 );
