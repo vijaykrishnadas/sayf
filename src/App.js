@@ -17,6 +17,7 @@ import Augmont from './assets/augmont.svg';
 import Carousel2  from './Carousel'
 
 import React, {useState} from 'react'
+import Newsletter from './Newsletter'
 
 
 function App() {
@@ -226,8 +227,7 @@ function App() {
          <h1>Never miss an update</h1>
           <p>Sign up for our monthly newsletter<br />for financial tips and exclusive updates.<br /> Your details are safe with us 😃</p>
           <div className="text-field">
-            <input type="text" />
-            <button className="btn-subscribe">Subscribe</button>
+            <Newsletter/>
           </div>
 
        </div>

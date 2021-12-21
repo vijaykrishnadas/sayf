@@ -7,8 +7,7 @@ import reportWebVitals from './reportWebVitals';
 import {
   HashRouter as Router,
   Route,
-  Switch,
-  Link
+  Switch
 } from "react-router-dom";
 import Terms from './Terms';
 
